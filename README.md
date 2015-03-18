@@ -32,7 +32,7 @@ This Repository contains:
 	
 	3. Open your RStudio and set the working directory to the repository directory.
 	
-	4. Run run_analysis.R script
+	4. Run run_analysis.R script.
 	
-	5. Script will run and export the tidy data "data.txt" to the repository directory
+	5. Script will run and export the tidy data "data.txt" to the repository directory.
 		
