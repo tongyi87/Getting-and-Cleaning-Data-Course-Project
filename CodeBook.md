@@ -29,29 +29,36 @@ For each record it is provided:
 
 The raw data sets are processed with the script run_analysis.R script to create a tidy data set.
 
-__Merge training and test sets__
-Test and training data, subject ids and activity ids are merged to obtain a single data set. 
-Variables are labelled with the names assigned by original collectors.
+__Merges the training and the test sets to create one data set__
+Training and test set are merged into a data set.
 
-__Extract mean and standard deviation variables__
-Keep only the values of estimated mean and standard deviation .
 
-__Get descriptive activity names__
-A new column is added to intermediate data set with the activity description.
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement. 
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names. 
 
-__Get abel variables appropriately__
-Labels given from the original collectors were changed to get valid/more descriptive R names 
+__Extracts only the measurements on the mean and standard deviation for each measurement__
+Using grep command, column names are filtered with pattern matching "mean" or "std". Data are extracted for these column names.
 
-__Create a tidy data set__
-From the intermediate data set is created a final tidy data set where numeric
-variables are averaged for each activity and each subject.
+
+__Uses descriptive activity names to name the activities in the data set__
+Activity names are converted to lower case and underscore is replaced with space.
+
+
+__Appropriately labels the data set with descriptive variable names.__
+Variable name for subjectId and activity is labeled with "SubjectID" and "Activity" respectively.
+
+
+__Creates a second, independent tidy data set with the average of each variable for each activity and each subject__
+From the intermediate data, a tidy data called "data.txt" is created with the average of each measurement.
+
 
 ### Tidy data set
 
-Variables
+__Variables__
 
 The tidy data contains :
 * SubjectID - It is an identifier for each subject. Value is from 1 to 30.
 * Activity - It represents the name of the activities. Values are "walking", "walking upstairs", "walking downstairs", "sitting", "standing" and "laying"
-* Average of the measurements on the mean and standard deviation for each measurement extracted from the raw data. Column name formatted with <Measurement>-<Function>-<Property>. 
-E.g. tBodyAccJerk-std()-Y represents the standard deviation for the Y of tBodyAccJerk measurement.
+* Average of the measurements on the mean and standard deviation for each measurement extracted from the raw data. Column name formatted with <Measurement>-<Function>-<Property>. E.g. tBodyAccJerk-std()-Y represents the standard deviation for the Y of tBodyAccJerk measurement.
