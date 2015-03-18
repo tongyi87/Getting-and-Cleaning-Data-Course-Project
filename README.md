@@ -1,4 +1,4 @@
-# Getting-and-Cleaning-Data-Course-Project
+# Getting and Cleaning Data Course Project
 
 This Repository contains:
 
@@ -20,7 +20,7 @@ This Repository contains:
 	
 	6. Next, the ActivityID variable is removed from the extracted data as there is an existing Activity variable whish is more descriptive present in the table.
 	
-	7. Using the Aggregate(), the table applys the Mean() on all measurement variables by the Activity and SubjectID.
+	7. Using the Aggregate(), the table applys the Mean() on all measurement variables group by the Activity and SubjectID.
 	
 	8. Lastly, the clean data is written to source folder with the name "data.txt".
 	
