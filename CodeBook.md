@@ -30,27 +30,27 @@ For each record it is provided:
 The raw data sets are processed with the script run_analysis.R script to create a tidy data set.
 
 __Merges the training and the test sets to create one data set__
+
 Training and test set are merged into a data set.
 
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement. 
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive variable names. 
-
 __Extracts only the measurements on the mean and standard deviation for each measurement__
+
 Using grep command, column names are filtered with pattern matching "mean" or "std". Data are extracted for these column names.
 
 
 __Uses descriptive activity names to name the activities in the data set__
+
 Activity names are converted to lower case and underscore is replaced with space.
 
 
 __Appropriately labels the data set with descriptive variable names.__
+
 Variable name for subjectId and activity is labeled with "SubjectID" and "Activity" respectively.
 
 
 __Creates a second, independent tidy data set with the average of each variable for each activity and each subject__
+
 From the intermediate data, a tidy data called "data.txt" is created with the average of each measurement.
 
 
