@@ -10,7 +10,7 @@ colnames(subjectIDs)<-"SubjectID"
 
 
 xs<-rbind(read.table(file.path(dataPath,"train/X_train.txt")), read.table(file.path(dataPath,"test/X_test.txt")))
-xsColumnNames<-read.table(file.path(dataPath,"features.txt"))[[2]]
+xsColumnNames<-tolower(gsub("\\(|\\)", "", read.table(file.path(dataPath,"features.txt"))[[2]]))
 colnames(xs)<-xsColumnNames
 
 
