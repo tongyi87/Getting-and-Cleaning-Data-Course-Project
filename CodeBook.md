@@ -43,4 +43,4 @@ __Variables__
 The tidy data contains :
 * SubjectID - It is an identifier for each subject. Value is from 1 to 30.
 * Activity - It represents the name of the activities. Values are "walking", "walking upstairs", "walking downstairs", "sitting", "standing" and "laying"
-* Average of the measurements on the mean and standard deviation for each measurement extracted from the raw data. Column name formatted with <Measurement>-<Function>-<Property>. E.g. tBodyAccJerk-std()-Y represents the standard deviation for the Y of tBodyAccJerk measurement.
+* Average of the measurements on the mean and standard deviation for each measurement extracted from the raw data. Column name formatted with Measurement-Function-Property. E.g. tBodyAccJerk-std()-Y represents the standard deviation for the Y of tBodyAccJerk measurement.
